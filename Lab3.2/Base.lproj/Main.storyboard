@@ -44,27 +44,42 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="Open Browser"/>
                                 <state key="normal" title="Open Browser"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyO-Gc-t8e">
-                                <rect key="frame" x="169" y="290" width="76" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send Email"/>
+                                <connections>
+                                    <action selector="OpenBrowser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jOw-Vd-sYZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z09-iT-Ypc">
                                 <rect key="frame" x="160" y="385" width="95" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Open Camera"/>
+                                <connections>
+                                    <action selector="OpenCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MEL-6q-XGc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAy-Ri-HNh">
                                 <rect key="frame" x="169" y="522" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Call"/>
+                                <connections>
+                                    <action selector="CreateCall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rnt-pt-TWJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyO-Gc-t8e">
+                                <rect key="frame" x="163" y="304" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send Email"/>
+                                <connections>
+                                    <action selector="SendEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngj-kj-jUA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="EtextBrowser" destination="chc-dS-Qra" id="6Wb-Kt-2MQ"/>
+                        <outlet property="EtextCall" destination="As7-fB-hHJ" id="5QY-ha-Cqn"/>
+                        <outlet property="EtextEmail" destination="GC6-Pj-8sp" id="MwZ-kL-Kds"/>
                         <outlet property="URL" destination="chc-dS-Qra" id="XKi-aw-Tfe"/>
                     </connections>
                 </viewController>
